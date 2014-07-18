@@ -13,7 +13,7 @@ ulimit -n 10240
 export CLICOLOR_FORCE=true
 export EDITOR=emacsclient
 export MANPATH=/usr/local/share/man
-export PATH=./node_modules/.bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=./node_modules/.bin:~/bin:/usr/local/sbin:/usr/X11/bin:$PATH
 export TERM=xterm-256color
 
 alias e="emacsclient -a '' -nw"
