@@ -5,7 +5,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-if [[ `arch` == "Darwin" ]]; then
+if [[ `uname` == "Darwin" ]]; then
   export NVM_DIR=~/.nvm
   source $(brew --prefix nvm)/nvm.sh
 
