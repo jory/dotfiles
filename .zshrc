@@ -5,10 +5,12 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+if [[ `arch` == "Darwin" ]]; then
+  export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
 
-ulimit -n 10240
+  ulimit -n 10240
+fi
 
 export CLICOLOR_FORCE=true
 export EDITOR=emacsclient
