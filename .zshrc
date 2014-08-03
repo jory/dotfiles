@@ -7,14 +7,19 @@ source $ZSH/oh-my-zsh.sh
 
 if [[ `uname` == "Darwin" ]]; then
   export NVM_DIR=~/.nvm
-  source $(brew --prefix nvm)/nvm.sh
+
+  nvm="$(brew --prefix nvm)/nvm.sh";
+
+  if [[ -a $nvm ]]; then
+      source $nvm
+  fi
 
   ulimit -n 10240
 fi
 
 export CLICOLOR_FORCE=true
 export EDITOR=emacsclient
-# export ALTERNATE_EDITOR=emacs
+export ALTERNATE_EDITOR=emacs
 export MANPATH=/usr/local/share/man
 export PATH=./node_modules/.bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/X11/bin:$PATH
 export TERM=xterm-256color
