@@ -36,6 +36,8 @@ alias tree="find . -print | sed 's;[^/]*/;|___;g;s;___|; |;g'"
 alias nuclear="./gradlew clean go cleanDeployWar && ./gradlew deployWar"
 alias services="cd ~/src/lapetus/services/ && git pull && ./install-stable.sh && FETCH_DEBUG_CONSOLE=true && ./start"
 
+alias lsxl="gfind . -regex '.*\(\.git\|node_modules\)' -prune -o -printf '%b\t%h/%f\n' | sort -n | grep -v '^0'"
+
 if [ -n "$INSIDE_EMACS" ]; then
   chpwd() { print -P "\033AnSiTc %d" }
   print -P "\033AnSiTu %n"
