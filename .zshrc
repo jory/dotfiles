@@ -33,10 +33,17 @@ ec() {
 alias ohmy="source ~/.zshrc"
 alias tree="find . -print | sed 's;[^/]*/;|___;g;s;___|; |;g'"
 
+alias atlas="~/src/atlas/"
+alias lapetus="~/src/lapetus/"
+
 alias nuclear="./gradlew clean go cleanDeployWar && ./gradlew deployWar"
 alias services="cd ~/src/lapetus/services/ && git pull && ./install-stable.sh && FETCH_DEBUG_CONSOLE=true && ./start"
 
 alias lsxl="gfind . -regex '.*\(\.git\|node_modules\)' -prune -o -printf '%b\t%h/%f\n' | sort -n | grep -v '^0'"
+alias wln="gfind ./* -mindepth 1 -maxdepth 2 -lname '*'"
+
+alias llab="lab -m9000000 -v"
+alias mlab="MOCK=true llab"
 
 if [ -n "$INSIDE_EMACS" ]; then
   chpwd() { print -P "\033AnSiTc %d" }
