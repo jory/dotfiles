@@ -45,6 +45,9 @@ alias wln="gfind ./* -mindepth 1 -maxdepth 2 -lname '*'"
 alias llab="lab -m9000000 -v"
 alias mlab="MOCK=true llab"
 
+alias dlab="node-debug -p 9292 lab -m9000000 -v"
+alias dmlab="MOCK=true dlab"
+
 if [ -n "$INSIDE_EMACS" ]; then
   chpwd() { print -P "\033AnSiTc %d" }
   print -P "\033AnSiTu %n"
