@@ -32,7 +32,7 @@ ec() {
 alias ohmy="source ~/.zshrc"
 alias tree="find . -print | sed 's;[^/]*/;|___;g;s;___|; |;g'"
 
-export ATLAS="~/src/atlas/"
+export ATLAS="/Users/jgraha2/src/atlas/"
 alias atlas="~/src/atlas/"
 alias lapetus="~/src/lapetus/"
 
