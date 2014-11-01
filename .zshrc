@@ -42,10 +42,10 @@ alias services="cd ~/src/lapetus/services/ && git pull && ./install-stable.sh &&
 alias lsxl="gfind . -regex '.*\(\.git\|node_modules\)' -prune -o -printf '%b\t%h/%f\n' | sort -n | grep -v '^0'"
 alias wln="gfind ./* -mindepth 1 -maxdepth 2 -lname '*'"
 
-alias llab="lab -m9000000 -v"
+alias llab="lab -m 9000000 -v"
 alias mlab="MOCK=true llab"
 
-alias dlab="node-debug -p 9292 lab -m9000000 -v"
+alias dlab="node-debug -p 9292 lab -m 9000000 -v"
 alias dmlab="MOCK=true dlab"
 
 if [ -n "$INSIDE_EMACS" ]; then
