@@ -20,7 +20,7 @@ fi
 export CLICOLOR_FORCE=true
 export EDITOR=emacsclient
 export ALTERNATE_EDITOR=emacs
-export PATH=./node_modules/.bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/X11/bin:$PATH
+export PATH=./node_modules/.bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/X11/bin:/Applications/adt-bundle-mac-x86_64-20140702/sdk/platform-tools/:$PATH
 export TERM=xterm-256color
 
 alias e="emacsclient -a '' -nw"
