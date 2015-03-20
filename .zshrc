@@ -54,4 +54,4 @@ if [ -n "$INSIDE_EMACS" ]; then
   print -P "\033AnSiTc %d"
 fi
 
-jingletron
+jingletron | lolcat
